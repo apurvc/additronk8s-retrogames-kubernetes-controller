@@ -1,0 +1,9 @@
+apiVersion: retro.sparkfabrik.com/v1
+kind: Game
+metadata:
+  name: tetris
+spec:
+  name: "tetris"
+  zipUrl: "https://archive.org/download/TETRIS.EXE/TETRIS.EXE.zip"
+  dir: "."
+  exe: "TETRIS.EXE"
