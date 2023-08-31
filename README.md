@@ -63,7 +63,7 @@ kubectl -n games apply -f k8s/manifests/game-controller.yaml
 Now you can run a demo game to test if everything is working as expected:
 
 ```shell
-kubectl -n games apply -f k8s/games/quake.yml
+kubectl -n games apply -f k8s/games/tetris.yml
 ```
 
 > You can also tail the logs of the game-controller to ensure that it was successful
@@ -77,10 +77,10 @@ Once you have the game up and running, you can access via the web browser by pro
 the game service, like this:
 
 ```
-kubectl -n games port-forward svc/quake 8080:8080 8081:8081
+kubectl -n games port-forward svc/tetris 8080:8080 8081:8081
 ```
 
-Finally you can access the game console on: `https://localhost:8080`
+Finally you can access the game console on: ``
 
 At this stage you will be presented with the dosbox command line and
 the command to run to execute the game.
